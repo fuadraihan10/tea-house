@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tea House</title>
+
+  <!-- Fonts -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
     
-    .manrope {
+    .mangit rope {
       font-family: "Manrope", sans-serif;
       font-optical-sizing: auto;
       font-weight: normal;
       font-style: normal;
-      }
-   </style>
+    }
+  </style>
 
-   <script src="https://kit.fontawesome.com/04d502c16c.js" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+  <!-- External Scripts -->
+  <script src="https://kit.fontawesome.com/04d502c16c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body >
+
+<body claas="manrope">
   <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-    <!-- Header Section -->
-    <header class="lg:flex pt-10 mb-20">
-      <!-- Text content -->
-      <div>
+    <!-- Hero Section -->
+    <header class="hero-section lg:flex pt-10 mb-20">
+      <div class="hero-content">
         <h1 class="text-5xl md:text-7xl">
           It's good <br />
           tea time at The <br />
@@ -43,8 +46,8 @@
           <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
         </button>
       </div>
-      <!-- Image Content -->
-      <div class="relative">
+      
+      <div class="hero-image relative">
         <!-- Image -->
         <div>
           <img class="w-full" src="./images/banner.png" alt="" />
@@ -63,10 +66,10 @@
         </div>
       </div>
     </header>
-    <!-- Featured Products Section -->
-    <section class="py-8 lg:py-24">
-      <!-- Title -->
-      <div class="text-center mb-8">
+
+    <!-- Featured Products -->
+    <section class="featured-products py-8 lg:py-24">
+      <div class="section-header text-center mb-8">
         <h1 class="text-3xl md:text-4xl font-bold mb-5">
           Our Featured Products
         </h1>
@@ -77,11 +80,9 @@
           believable.
         </p>
       </div>
-      <!-- Grid Cards -->
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center"
-      >
-        <!-- Product Card -->
+
+      <div class="product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <!-- Tea Product Cards -->
         <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
           <img class="mx-auto pt-4" src="./images/tea-1.png" alt="" />
           <div class="p-4">
@@ -123,8 +124,9 @@
         </div>
       </div>
     </section>
-    <!-- Great Tea Section -->
-    <section class="mb-24">
+
+    <!-- Great Tea Freshness -->
+    <section class="tea-freshness mb-24">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <!-- Image Section -->
         <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6">
@@ -168,11 +170,11 @@
         </div>
       </div>
     </section>
-    <!-- Reviews Section -->
-    <section class="mb-24">
-      <div
-        class="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16"
-      >
+
+    <!-- Client Reviews -->
+    <section class="client-reviews mb-24">
+      <div class="review-container bg-gradient-to-r from-orange-500 to-red-500 rounded-xl 
+                  grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16">
         <!-- Text Section -->
         <div class="flex justify-center items-center overflow-hidden">
           <div class="w-5/6">
@@ -248,11 +250,12 @@
         </div>
       </div>
     </section>
-     <!-- Footer Section -->
-     <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
-      <div class="w-9/12 mx-auto">
-        <!-- Logo -->
-        <div class="mb-8 flex justify-between">
+
+    <!-- Footer -->
+    <footer class="site-footer bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
+      <div class="footer-container w-9/12 mx-auto">
+        <!-- Footer Top -->
+        <div class="footer-top mb-8 flex justify-between">
           <img class="mb-8" src="./images/cup.png" alt="" />
           <div class="flex items-center gap-2">
             <h4>Ready to get started?</h4>
@@ -263,8 +266,9 @@
             </button>
           </div>
         </div>
-        <!-- Links -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <!-- Footer Links -->
+        <div class="footer-links grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <!-- first column -->
           <div>
             <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
@@ -338,7 +342,9 @@
             </div>
           </div>
         </div>
-        <div class="text-center pt-4 mt-4">
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom text-center pt-4 mt-4">
           <p class="text-sm text-gray-600">
             © 2027 UIDesign.to - All rights reserved.
           </p>
